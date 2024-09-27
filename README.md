@@ -24,25 +24,30 @@ Dataset Problem statement
 Given the text of a tweet, the task is to classify the sentiment as positive, negative, or neutral. This involves training a model to understand the emotional tone of the text.
 
 6.Project Directory Structure
-│                      
-├── app.py                           # Streamlit application script
-├── data                             # Directory for storing the dataset
-│   └── train.csv                    # Sentiment dataset
-├── images                           # Directory for sentiment image
-│   ├── app_Sentiment_1.jpg          # web app screenshot 1
-│   └── app_Sentiment_2.jpg          # web app screenshot 2
-│   └── app_Sentiment_3.jpg          # web app screenshort 3
-│   └── negative.jpg                 # Positive sentiment image
-│   └── neutral.jpg                  # Positive sentiment image
-│   └── positive.jpg                 # Positive sentiment image
-│   └── sentimentanalysishotelgeneric-2048x803-1.jpg
-├── docs                             # documentation for your project
-├── .gitignore                       # ignore files that cannot commit to Git
-├── notebooks                        # store notebooks
-│   └── EDA_sentiment_analysis.ipynb # EDA Notebook
-├── logs.txt                         # Streamlit log files 
-├── requirements.txt                 # List of required packages
-├── README.md                        # Project README file
+project_root/
+│
+├── main.py                    # Main script containing the chatbot implementation
+│
+├── requirements.txt           # List of dependencies
+│
+├── files/                     # Directory for input chat files
+│   └── (your_chat_files.txt)  # Example chat files
+│
+├── new_files/                 # Directory for storing conversation logs
+│   └── (convoX.txt)           # Logs of conversations, X being a unique number
+│
+├── models/                    # Directory for storing any trained models
+│   └── (model_file)           # Placeholder for any model files if needed
+│
+├── utils/                     # Directory for utility scripts or modules
+│   ├── __init__.py            # Init file for making utils a package
+│   ├── numeric_parser.py       # Numeric string parser class
+│   ├── sentiment_analysis.py    # Sentiment analysis utility
+│   └── search_util.py          # Google search utility
+│
+└── data/                      # Directory for any static or configuration data
+    └── (data_files)           # Placeholder for any additional data files
+
 Description
 Sentiment analysis is the process of determining the sentiment (positive, negative, neutral) expressed in a piece of text. This project uses the Naïve Bayes algorithm to classify the sentiment of input text and displays the results using a user-friendly Streamlit app.
 
