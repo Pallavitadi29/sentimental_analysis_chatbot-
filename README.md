@@ -49,9 +49,8 @@
    9.1 [Running the Notebook](#exploratory-data-analysis1)
 
    9.2 [Results and Visualizations](#exploratory-data-analysis2)
-10. [License](#License)
-11. [Acknowledgements](#Acknowledgements)
-12. [Contact Information](#Contact)
+10. [Acknowledgements](#Acknowledgements)
+
 
 ## Introduction <a name="introduction"></a>
 
@@ -93,7 +92,7 @@ Given the text of a tweet, the task is to classify the sentiment as `positive`, 
 # Project Directory Structure <a name="Structure"></a>
 ```bash
 │                      
-├── app.py                           # Streamlit application script
+├── chatbot.py                           # Streamlit application script
 ├── data                             # Directory for storing the dataset
 │   └── train.csv                    # Sentiment dataset
 ├── images                           # Directory for sentiment image
@@ -145,20 +144,14 @@ Sentiment analysis is the process of determining the sentiment (positive, negati
    - Incorporate text input, sentiment classification, and display of sentiment scores.
    - Display sentiment-specific images based on the predicted sentiment.
 
-5. **Running the App:**
+5. **Running the chatbot:**
    - Install the required packages using `pip install streamlit pandas nltk`.
    - Run the Streamlit app using `streamlit run app.py`.
 
-6. **Interact with the App:**
+6. **Interact with the chatbot:**
    - Enter text in the provided text area and click the "Classify Sentiment" button.
    - View the predicted sentiment label, sentiment scores, and corresponding image.
 
-## Requirements <a name="Requirements"></a>
-
-- Python 3.x
-- Streamlit
-- Pandas
-- NLTK (Natural Language Toolkit)
 
 ## Usage <a name="Usage"></a>
 
@@ -237,9 +230,7 @@ The notebook produces various insightful visualizations, including:
 
 Sample images of these visualizations are provided in the repository's `images` folder.
 
-## License <a name="License"></a>
 
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements <a name="Acknowledgements"></a>
 
@@ -247,5 +238,4 @@ This project is licensed under the [MIT License](LICENSE).
 - Streamlit is used for creating the user interface.
 - NLTK is used for text preprocessing.
 
-## Contact Information <a name="Contact"></a>
-For questions, feedback, or discussions related to this project, you can contact me at [mianashfaque@gmail.com](mailto:mianashfaque@gmail.com).
+
